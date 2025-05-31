@@ -1,45 +1,143 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Script Hub</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ScriptHub | Free Roblox Scripts</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }body {
+  background: #0f0f0f;
+  color: #fff;
+  line-height: 1.6;
+}
+
+header {
+  background: #111;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #00ffff55;
+}
+
+header h1 {
+  font-size: 24px;
+  color: #00ffff;
+}
+
+.hero {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.hero button {
+  background: #00ffff;
+  color: #000;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hero button:hover {
+  background: #00cccc;
+}
+
+.scripts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px #00ffff33;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card h3 {
+  color: #00ffff;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #aaa;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.card button {
+  background: #00ffff;
+  color: #000;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  border-top: 2px solid #00ffff55;
+  color: #666;
+  font-size: 14px;
+}
+
+  </style>
 </head>
 <body>
-  <!-- Hero Section -->
-  <header class="hero">
-    <h1>🔥 Welcome to My Script Hub 🔥</h1>
-    <p>Your one-stop destination for all custom Roblox scripts.</p>
-    <a href="scripts/script1.lua" download class="get-script-btn">Get Featured Script</a>
-  </header>
+  <header>
+    <h1>ScriptHub</h1>
+    <nav>
+      <!-- You can add links here -->
+    </nav>
+  </header>  <section class="hero">
+    <h2>Download Free Roblox Scripts</h2>
+    <p>Choose from our collection of hand-picked scripts. Safe, updated, and free to use!</p>
+    <button onclick="scrollToScripts()">View Scripts</button>
+  </section>  <section class="scripts" id="scriptList">
+    <div class="card">
+      <h3>Infinite Yield</h3>
+      <p>Powerful admin commands script with GUI for Roblox.</p>
+      <a href="scripts/infinite_yield.txt" download><button>Download</button></a>
+    </div><div class="card">
+  <h3>Dark Hub</h3>
+  <p>A universal script hub with auto-execute, UI, and many game features.</p>
+  <a href="scripts/dark_hub.txt" download><button>Download</button></a>
+</div>
 
-  <!-- Scripts Gallery -->
-  <section class="scripts-gallery">
-    <h2>📂 All Available Scripts</h2>
+<!-- Add more script cards below -->
 
-    <div class="script-card">
-      <h3>Script 1 - Infinite Jump</h3>
-      <p>Allows your character to jump infinitely.</p>
-      <a href="scripts/script1.lua" download class="download-btn">Download</a>
-    </div>
-
-    <div class="script-card">
-      <h3>Script 2 - Fly Hack</h3>
-      <p>Enables flying in any game. Use with caution!</p>
-      <a href="scripts/script2.lua" download class="download-btn">Download</a>
-    </div>
-
-    <div class="script-card">
-      <h3>Script 3 - Auto Farm</h3>
-      <p>Automates farming in simulators.</p>
-      <a href="scripts/script3.txt" download class="download-btn">Download</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <p>© 2025 My Script Hub. All rights reserved.</p>
-  </footer>
-</body>
+  </section>  <footer>
+    &copy; 2025 ScriptHub. All rights reserved.
+  </footer>  <script>
+    function scrollToScripts() {
+      document.getElementById("scriptList").scrollIntoView({ behavior: 'smooth' });
+    }
+  </script></body>
 </html>
