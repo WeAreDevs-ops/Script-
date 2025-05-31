@@ -1,42 +1,45 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My Script Hub</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" type="image/png">
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-gray-900 text-white font-sans">
-  <!-- HEADER -->
-  <header class="bg-gray-800 shadow-md p-4 sticky top-0 z-50">
-    <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-xl font-bold text-blue-400">My Script Hub</h1>
-      <nav class="space-x-4">
-        <a href="#about" class="hover:text-blue-300">About</a>
-        <a href="#download" class="hover:text-blue-300">Download</a>
-        <a href="#contact" class="hover:text-blue-300">Contact</a>
-      </nav>
+<body>
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>🔥 Welcome to My Script Hub 🔥</h1>
+    <p>Your one-stop destination for all custom Roblox scripts.</p>
+    <a href="scripts/script1.lua" download class="get-script-btn">Get Featured Script</a>
+  </header>
+
+  <!-- Scripts Gallery -->
+  <section class="scripts-gallery">
+    <h2>📂 All Available Scripts</h2>
+
+    <div class="script-card">
+      <h3>Script 1 - Infinite Jump</h3>
+      <p>Allows your character to jump infinitely.</p>
+      <a href="scripts/script1.lua" download class="download-btn">Download</a>
     </div>
-  </header>  <!-- HERO SECTION -->  <section class="text-center py-20 bg-gradient-to-b from-gray-900 to-gray-800">
-    <h2 class="text-4xl font-extrabold mb-4">Welcome to My Script Site</h2>
-    <p class="text-lg text-gray-300 max-w-xl mx-auto">Download custom scripts directly from my personal hub. Trusted. Clean. Simple.</p>
-    <a href="#download" class="mt-6 inline-block bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-xl text-lg shadow-lg transition-all">Get Script</a>
-  </section>  <!-- ABOUT SECTION -->  <section id="about" class="container mx-auto px-6 py-16">
-    <h3 class="text-2xl font-semibold mb-4">About This Project</h3>
-    <p class="text-gray-300 leading-relaxed">
-      This project was made for educational or personal automation use. You can add any script or tool here that you want to share with friends. Simply update the download section with your own file or script.
-    </p>
-  </section>  <!-- DOWNLOAD SECTION -->  <section id="download" class="bg-gray-800 py-16 px-6">
-    <div class="max-w-2xl mx-auto text-center">
-      <h3 class="text-3xl font-bold mb-4">Download Script</h3>
-      <p class="text-gray-400 mb-6">Click below to download the latest version of the script.</p><a href="/scripts/myscript.lua" download class="bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-xl text-lg shadow-xl transition">Download Now</a>
 
-  <p class="mt-4 text-sm text-gray-500 italic">Always use responsibly. This file is provided as-is.</p>
-</div>
+    <div class="script-card">
+      <h3>Script 2 - Fly Hack</h3>
+      <p>Enables flying in any game. Use with caution!</p>
+      <a href="scripts/script2.lua" download class="download-btn">Download</a>
+    </div>
 
-  </section>  <!-- CONTACT / FOOTER -->  <footer id="contact" class="bg-gray-900 border-t border-gray-700 py-10 text-center">
-    <p class="text-gray-400">Created by <span class="text-blue-400">Mix Nthe Club</span> | Contact: your@email.com</p>
-    <p class="text-gray-600 mt-2">&copy; 2025 My Script Hub</p>
+    <div class="script-card">
+      <h3>Script 3 - Auto Farm</h3>
+      <p>Automates farming in simulators.</p>
+      <a href="scripts/script3.txt" download class="download-btn">Download</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 My Script Hub. All rights reserved.</p>
   </footer>
 </body>
 </html>
